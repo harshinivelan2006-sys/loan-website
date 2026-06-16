@@ -1,0 +1,366 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8fafc;
+}
+
+/* Header */
+
+header{
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    position:relative;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    display:block;
+}
+
+nav ul li a:hover{
+    color:#f59e0b;
+}
+
+/* Dropdown */
+
+.dropdown-menu{
+    display:none;
+    position:absolute;
+    background:white;
+    min-width:220px;
+    top:100%;
+    left:0;
+}
+
+.dropdown-menu li a{
+    color:black;
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+/* Hero */
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 500px;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.45),
+            rgba(255, 255, 255, 0.45)
+        ),
+        url("../image/banner.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Form */
+
+.apply-form{
+    width:60%;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+.apply-form h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.apply-form form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.apply-form input,
+.apply-form select{
+    padding:12px;
+}
+
+.apply-form button{
+    padding:12px;
+    background:#0f172a;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+/* About Page */
+
+.about-page{
+    width:80%;
+    margin:40px auto;
+    background:#fff;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.about-page h1{
+    text-align:center;
+    color:#0f172a;
+    margin-bottom:25px;
+}
+
+.about-page h2{
+    color:#f59e0b;
+    margin-top:25px;
+    margin-bottom:15px;
+}
+
+.about-page p{
+    line-height:1.8;
+    margin-bottom:15px;
+    text-align:justify;
+}
+
+.about-page ul{
+    margin-left:25px;
+}
+
+.about-page ul li{
+    margin-bottom:10px;
+}
+
+.quote{
+    margin-top:30px;
+    text-align:center;
+    background:#0f172a;
+    color:white;
+    padding:20px;
+    border-radius:10px;
+}
+.profile-card{
+    background:#f8fafc;
+    padding:25px;
+    margin:20px 0;
+    border-left:5px solid #f59e0b;
+    border-radius:8px;
+}
+
+.profile-card h3{
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.profile-card p{
+    line-height:1.8;
+    text-align:justify;
+}
+/* Loan Pages */
+
+.loan-page{
+    width:80%;
+    margin:40px auto;
+}
+
+.loan-page h1{
+    text-align:center;
+    color:#0f172a;
+    margin-bottom:20px;
+}
+
+.loan-page > p{
+    text-align:center;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.loan-card{
+    background:#ffffff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.loan-card h2{
+    color:#f59e0b;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.loan-card ul{
+    margin-left:25px;
+}
+
+.loan-card ul li{
+    margin-bottom:10px;
+}
+
+.rate{
+    font-size:28px;
+    font-weight:600;
+    color:#0f172a;
+}
+
+.apply-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#0f172a;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.apply-btn:hover{
+    background:#f59e0b;
+    color:#000;
+}
+.loan-card label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:600;
+}
+
+.loan-card input{
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+}
+
+#result{
+    text-align:center;
+    color:#0f172a;
+    margin-top:20px;
+}
+/* Feedback Page */
+
+.feedback-page{
+    width:80%;
+    margin:40px auto;
+    background:#ffffff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.feedback-page h1{
+    text-align:center;
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.feedback-page p{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.feedback-form{
+    display:flex;
+    flex-direction:column;
+}
+
+.feedback-form label{
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.feedback-form select,
+.feedback-form textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+/* Contact Page */
+
+.contact-page{
+    width:85%;
+    margin:40px auto;
+}
+
+.contact-page h1{
+    text-align:center;
+    color:#0f172a;
+    margin-bottom:30px;
+}
+
+.contact-container{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.contact-info,
+.contact-form{
+    flex:1;
+    min-width:300px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.contact-info h2{
+    color:#f59e0b;
+    margin-bottom:10px;
+}
+
+.contact-info p{
+    line-height:1.8;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul{
+        flex-direction:column;
+    }
+
+    .apply-form,
+    .about-page,
+    .loan-page,
+    .feedback-page{
+        width:95%;
+    }
+
+    .contact-container{
+        flex-direction:column;
+    }
+}
