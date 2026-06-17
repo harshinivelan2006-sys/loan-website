@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harshinivelan2006-sys.github.io/loan-website/sitemap.xml
